@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qumark Media</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111111;
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #111111 url('path-to-your-pattern.png') repeat;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .logo span {
+      color: #ff0000;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .nav li {
+      margin: 0 10px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .connect-btn {
+      background-color: #ff69b4;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav li {
+        margin: 5px 0;
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      background: #111111 url('path-to-your-pattern.png') repeat;
+    }
+
+    /* ... other styles ... */
+
+    .connect-btn {
+      background-color:
+        #E20044;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      /* border-radius: 5px; */
+      margin-left: 10px;
+      /* Add space between the text and button */
+    }
+
+    /* New container for the 'Let's connect' section */
+    .connect-container {
+      display: flex;
+      align-items: center;
+
+    }
+
+    @media (max-width: 768px) {
+      /* ... other responsive styles ... */
+
+      .connect-container {
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-main {
+      display: flex;
+      justify-content: space-around;
+      /* position: fixed; */
+    }
+
+    .mainimg {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-top: 20px; */
+    }
+
+    .card {
+      /* width: 200px; */
+      /* height: 300px; */
+      background-color: transparent;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      text-align: center;
+      padding: 20px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 348px;
+      height: 232px;
+      background-color: black;
+      /* Dark blue background */
+      /* border: 5px solid #fcfcfc; */
+      /* Lighter blue border */
+      color: #FFFFFF;
+      /* White text */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .icon {
+      /* Placeholder for the icon */
+      width: 50px;
+      height: 50px;
+      background-color: #010001;
+      /* Pink color for the icon */
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      color: #f8f8f8;
+      /* Light blue for the text */
+    }
+
+    body,
+    html {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .banner {
+      background-color: #000;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding: 20px;
+      height: 200px;
+      /* Adjust height as needed */
+    }
+
+    .icon {
+      width: 50px;
+      /* Adjust size as needed */
+      height: 50px;
+      /* Adjust size as needed */
+      /* background-color: #ff0055; */
+      /* Adjust color as needed */
+      margin-right: 20px;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-text {
+      font-size: 24px;
+      /* Adjust font size as needed */
+      margin: 0;
+    }
+
+    .bottom-text {
+      font-size: 32px;
+      /* Adjust font size as needed */
+      margin: 0;
+    }
+
+    .btnbelowcards {
+      padding: 12px 162px;
+      background-color: #E20044;
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+
+      /* #8C91BE */
+    }
+
+    .alignment {
+      display: flex;
+      align-items: center;
+      place-content: center;
+      padding-top: 45px;
+
+
+    }
+
+
+    /* scoller css  */
+
+    .scroll-text {
+      font-size: 5em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .scroll-text span {
+      display: inline-block;
+      padding-right: 20px;
+      animation: scroll 10s linear infinite;
+      animation-delay: 3s;
+      /* Add a delay of 3 seconds */
+    }
+
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .scroll-text {
+        font-size: 3em;
+      }
+    }
+
+    /* cost effective css  */
+
+    .costeffective {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      margin-top: 74px;
+
+    }
+
+    .adminpeop {
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translate(-20%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo" style="width: 219px;
+    height: 104.14px;
+    top: 16px;
+    left: 71px;
+    gap: 0px;
+    opacity: 0px;
+    ">
+      <img src="./images/logo.png" alt="" srcset="">
+    </div>
+    <ul class="nav" style="
+    padding-left: 190px;
+">
+      <li><a href="#services">Solutions</a></li>
+      <li><a href="#work">Marketing Solutions</a></li>
+      <li><a href="#blog">Talent</a></li>
+      <li><a href="#about">Our Work</a></li>
+      <li><a href="#about">Our Blog</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a href="#contact" class="connect-btn" style="border-radius: 0px;">Let's connect</a>
+  </header>
+
+  <div>
+
+    <div class="mainimg">
+      <img src="./images/mobile.png" alt="" srcset="" style="    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 35%);">
+    </div>
+
+    <div class="content-main" style="    justify-content: center;
+align-items: center;">
+      <div class="content">
+        <h1 style="color: white;margin-right: 232px;font-size: 42px;">Tarck down your <br>marketand excelthy <br>
+          creation targets </h1>
+      </div>
+      <div class="thumps-ico">
+        <img src="/images/thumbs.png" alt="" srcset="">
+        <h6s style="color: grey;font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    display: grid;
+    line-height: 15.6px;
+    text-align: center; 
+    margin-right: -92px;"><br>Where Artful COntent COmes With <br> Coustomer Affection at crest</h6>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <div style="margin-top: 722px;">
+    <div class="card-container" style="  color: white;  display: flex;
+    margin-right: 460px;">
+      <div>
+        <div class="icon" style="background-color: #E20044;position: absolute;"></div>
+        <div class="icon" style="position: relative;top: 9px;
+        left: -25px;background-color: #8B002A;"></div>
+      </div>
+      <div class="text-content">
+        <p class="top-text">All performance No anxiety.</p>
+        <p class="bottom-text">Paid and performance media services</p>
+      </div>
+    </div>
+    <div class="card-container">
+
+
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <div class="icon"><img src="./images/components/brain.png" alt=""></div>
+          <div class="title">Programmatic & Display</div>
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed suspendisse in pulvinar.
+            Amet, amet, eleifend lacinia consectetur ln.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alignment"><a href="#" class="btnbelowcards">Let's get connected</a></div>
+  </div>
+
+  <!-- textfull size  -->
+  <div class="textmain" style="width: 100%;margin-top: 112px;">
+    <div class="text">
+      <div>
+        <div class="scroll-text" style="color: #8C91BE;opacity: 0.5;">
+          <span>_ Digital Marketing _ Agency _ SEO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cost effective digital marketing  -->
+
+  <div class="costeffective">
+    <img src="./images/Group 24.png" alt="#" class="costeff" style="height: 522px;    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 5%);">
+
+  </div>
+
+  <!-- people typing  -->
+  <div class="adminpeop" style="margin-top: 92px;position: relative; display: none;">
+    <div class="innermain">
+      <div class="contentpep" style="height: 435px;width: 638px;background-color: #f8f8f8;">
+
+      </div>
+      <div class="imagepeop">
+        <img src="./images/peopletyping.png" alt="" srcset="" style="height: 350px;">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- grow your bussiness div  -->
+  <div class="maingrowbussiness" style="background-image: url(./images/image\ 9.png);background-repeat: no-repeat;
+background-size: cover;margin-top: 53px;">
+    <div class="conetngrwbus" style="display:grid;place-items:center; margin-bottom: 95px;">
+      <h1 style="color: #fff;margin: 0px;margin-top: 85px;">Grow your bussiness with</h1><br>
+      <h1 style="color: #E20044;margin: 0px;">result that matter.</h1><br>
+      <div class="inputfiled">
+        <input type="search" placeholder="What services are you most intrested in?"
+          style="padding: 4px;width: 450px;font-size: 19px;margin-bottom: 92px;margin-top: 52px;border-radius: 6px;">
+      </div>
+    </div>
+  </div>
+  <!-- div ends here  -->
+
+
+  <!-- footer start  -->
+  <div class="footermain" style="background: url(./images/Rectangle\ 27.png);">
+    <div class="footerconatiner" style="display: flex;justify-content: space-evenly;padding-top: 64px;">
+      <div class="img">
+        <img src="./images/logo.png" alt="" srcset="">
+      </div>
+      <div class="content1" style="color: white;">
+        <h2 style="margin: 0;color: #E20044; font-family: monospace;">Short cut </h2>
+       
+          <ul>
+            <li>Home</li>
+            <li>blog</li>
+            <li>About Us</li>
+            <li>Contacts</li>
+          </ul>
+        </li>
+      </div>
+      <div class="content2">
+        <h2 style="margin: 0;color: #E20044;font-family: monospace;">Address </h2>
+        <p style="color: #fff;">6, Shreeram Apartment, <br> Malviya Nagar,Bhopal,<br>  Madhya Pradesh</p>
+      </div>
+
+      <div class="content3" style="color: white;">
+        <h2 style="margin: 0;color: #E20044;font-family: monospace;">Address </h2>
+        <ul>
+          <li>Home</li>
+          <li>blog</li>
+          <li>About Us</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+
+      <div class="content4">
+        <h2 style="margin: 0;color: #E20044;font-family: monospace;">Address </h2>
+        <p style="color: #fff;">info@quemarkmedia.com</p>
+
+      </div>
+
+      <div class="content5">
+        <h2 style="margin: 0;color: #E20044;font-family: monospace;">Follow </h2>
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="lowefooter">
+      <br class="lowerfooterbr" style="color: white; border-color: #8B002A;">
+      <h1 style="color: white; font-size: 16px;text-align: center;align-items: center;">© 2023 Quemark Media | All right reserved</h1>
+    </div>
+  </div>
+
+
+
+  <!-- footer end here  -->
+</body>
+
+</html>
